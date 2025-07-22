@@ -13,7 +13,7 @@ pipeline {
         stage('Run Tests') {
             steps {
                 withMaven(maven: 'Maven 3.6.1') {
-                    sh """mvn test"""
+                    sh """mvn test -o"""
                 }
             }
         }
