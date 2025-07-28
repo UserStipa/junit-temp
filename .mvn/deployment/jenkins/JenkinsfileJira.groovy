@@ -1,9 +1,5 @@
 pipeline {
-    agent {
-        node {
-            label 'zakroma-ui-machine'
-        }
-    }
+    agent any
     stages {
         stage('Git') {
             steps {
